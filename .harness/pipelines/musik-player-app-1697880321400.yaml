@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_musik_player_app_1697880327770
+  name: Build musik-player-app
+  orgIdentifier: default
+  projectIdentifier: Avanton
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1683922501636
+        repoName: musik-player-app
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
