@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_musik_player_app_1697880327770-push-trigger-input-set
+  identifier: Build_musik_player_app_1697880327770pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Avanton
+  pipeline:
+    identifier: Build_musik_player_app_1697880327770
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
