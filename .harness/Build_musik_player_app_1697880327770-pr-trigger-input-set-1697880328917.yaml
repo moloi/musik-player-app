@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_musik_player_app_1697880327770-pr-trigger-input-set
+  identifier: Build_musik_player_app_1697880327770prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Avanton
+  pipeline:
+    identifier: Build_musik_player_app_1697880327770
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
